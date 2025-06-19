@@ -59,7 +59,7 @@ typing = False
 def chat_with_lisa(prompt):
     prompt_lower = prompt.lower()
 
-    # ✅ Custom identity response
+    #  Custom identity response
     hindi_qs = ["tum kaun ho", "kisne banaya", "tumhe kisne banaya", "tum kon ho", "kon banaya", "tumhara naam kya hai"]
     english_qs = ["who are you", "who made you", "what is your name", "who created you"]
 
@@ -71,7 +71,7 @@ def chat_with_lisa(prompt):
             return "I was created by Akshay. My name is Lisa 2.0. My first version wasn't good, so I'm 2.0 now."
 
 
-    # 🔁 Normal chat
+    #  Normal chat
     response = requests.post(
         "http://localhost:11434/api/generate",
         json={
